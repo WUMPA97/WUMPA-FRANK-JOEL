@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wumpa Frank Joel | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -18,18 +18,23 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Hello, I'm Wumpa Frank </h1>
-    <p>Web Developer | Data Analyst | M&E Professional</p>
-    <a href="CV_WumpaFrankJoel.pdf" class="btn" download>📄 Download CV</a>
+    <div class="hero-content">
+      <h1>Hello, I'm Wumpa Frank</h1>
+      <p>Web Developer | Data Analyst | M&E Professional</p>
+      <a href="CV_WumpaFrankJoel.pdf" class="btn" download>📄 Download CV</a>
+    </div>
   </section>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a data-driven professional with experience in web development, data analysis, and monitoring & evaluation. I build tools that improve decision-making and streamline data workflows.</p>
+    <p>I am a data-driven professional with expertise in web development, data analysis, and monitoring & evaluation. My passion lies in building tools that enhance decision-making and optimize data workflows for impactful outcomes.</p>
   </section>
 
   <section id="skills">
@@ -45,42 +50,57 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>Medical Records System</h3>
-      <p>A web-based platform for capturing and reporting patient data using PHP and MySQL.</p>
-    </div>
-    <div class="project">
-      <h3>Analytics Dashboard</h3>
-      <p>Interactive dashboards built with Google Data Studio and Excel for healthcare data monitoring.</p>
+    <div class="project-grid">
+      <div class="project">
+        <h3>Medical Records System</h3>
+        <p>A web-based platform for capturing and reporting patient data using PHP and MySQL.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Analytics Dashboard</h3>
+        <p>Interactive dashboards built with Google Data Studio and Excel for healthcare data monitoring.</p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:wumpafrankajoel@gmail.com">wumpafrankajoel@gmail.com</a></p>
-    <p>Whatsapp: +256 771 621 692</p>
-    <p>
-      <a href="https://github.com/WUMPA97" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
-      <a href="https://www.linkedin.com/in/wumpa-frank-joel-26821413b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    </p>
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:wumpafrankajoel@gmail.com">wumpafrankajoel@gmail.com</a></p>
+      <p>WhatsApp: +256 771 621 692</p>
+      <p>
+        <a href="https://github.com/WUMPA97" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+        <a href="https://www.linkedin.com/in/wumpa-frank-joel-26821413b/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </p>
+    </div>
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="contact-form">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
-  
-  <section id="contact">
-  <h2>Contact Me</h2>
-  <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="contact-form">
-    <div class="form-group">
-      <input type="text" name="name" placeholder="Your Name" required>
-    </div>
-    <div class="form-group">
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-    </div>
-    <div class="form-group">
-      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-    </div>
-    <button type="submit" class="btn">Send Message</button>
-  </form>
-</section>
 
+  <footer>
+    <p>&copy; 2025 Wumpa Frank Joel. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
 
 
 
