@@ -1,40 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wumpa Frank Joel - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wumpa Frank Joel | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Wumpa Frank Joel</h1>
-    <p>Web Developer | Data Analyst | Freelancer | M&E Professional</p>
+    <nav>
+      <div class="logo">Wumpa Frank Joel</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hello! I'm a passionate data analyst with skills in data analytics, monitoring and evaluation, and more.</p>
+  <section class="hero">
+    <h1>Hello, I'm Wumpa Frank </h1>
+    <p>Web Developer | Data Analyst | M&E Professional</p>
+    <a href="CV_WumpaFrankJoel.pdf" class="btn" download>📄 Download CV</a>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Medical Records System:</strong> A patient data entry and reporting tool using PHP and MySQL.</li>
-      <li><strong>Analytics Dashboard:</strong> Built with Google Data Studio and Excel.</li>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a data-driven professional with experience in web development, data analysis, and monitoring & evaluation. I build tools that improve decision-making and streamline data workflows.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML & CSS</li>
+      <li>PHP & MySQL</li>
+      <li>JavaScript</li>
+      <li>Excel & Google Sheets</li>
+      <li>Data Analysis & Visualization</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Phone: +256 771 621 692</p>
-    <p>Email: <a href="mailto:wumpafrankajoel@gmail.com">wumpafrankajoel@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/WUMPA97" target="_blank">github.com/WUMPA97</a></p>
-    
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/wumpa-frank-joel" target="_blank">🔗 linkedin.com/in/wumpa-frank-joel</a></p>
-  
-    <a href="CV_WumpaFrankJoel.pdf" class="button" download>📄 Download CV</a>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Medical Records System</h3>
+      <p>A web-based platform for capturing and reporting patient data using PHP and MySQL.</p>
+    </div>
+    <div class="project">
+      <h3>Analytics Dashboard</h3>
+      <p>Interactive dashboards built with Google Data Studio and Excel for healthcare data monitoring.</p>
+    </div>
   </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:wumpafrankajoel@gmail.com">wumpafrankajoel@gmail.com</a></p>
+    <p>Phone: +256 771 621 692</p>
+    <p>
+      <a href="https://github.com/WUMPA97" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+      <a href="https://linkedin.com/in/wumpa-frank-joel" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wumpa Frank Joel</p>
+  </footer>
+</body>
+</html>
+
 
   <footer>
     <p>© 2025 Wumpa Frank Joel</p>
