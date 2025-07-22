@@ -1,93 +1,93 @@
-/* Reset some default styling */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* style.css */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f8f9fa;
-  color: #333;
-  padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #121212;
+  color: #f0f0f0;
 }
 
-/* Header styles */
 header {
-  background-color: #1f2937;
-  color: white;
-  padding: 2rem 1rem;
+  background: #1f1f1f;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-links a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 60px 20px;
   text-align: center;
+  background: #181818;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-header p {
-  font-size: 1.2rem;
-}
-
-/* Section styles */
-section {
-  background: white;
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 2rem;
+.btn {
+  background: #0077ff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-  margin-bottom: 1rem;
-  color: #1f2937;
-}
-
-section ul {
-  padding-left: 1.5rem;
-}
-
-section ul li {
-  margin-bottom: 0.5rem;
-}
-
-/* Contact links */
-a {
-  color: #1d4ed8;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer styles */
-footer {
-  background-color: #1f2937;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Button style (for future download CV or contact links) */
-.button {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #2563eb;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
-.button:hover {
-  background-color: #1d4ed8;
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  list-style: none;
+}
+
+.skills li {
+  background: #292929;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.project {
+  margin-bottom: 20px;
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+a {
+  color: #4fc3f7;
+}
+
+footer {
+  background: #1f1f1f;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
 }
